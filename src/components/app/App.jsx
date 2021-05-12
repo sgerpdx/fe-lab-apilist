@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import CharactersList from './characters/CharactersList';
+import CharacterDetail from './characters/CharacterDetail';
 
 export default function App() {
   return (
