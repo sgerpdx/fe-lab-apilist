@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CharactersList from './characters/CharactersList';
 import CharacterDetail from './characters/CharacterDetail';
-import AvatarContainer from '../../containers/AvatarContainer';
+// import AvatarContainer from '../../containers/AvatarContainer';
+// App just deals with presentation
 
 export default function App() {
   return (

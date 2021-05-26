@@ -11,10 +11,12 @@ export default class AvatarContainer extends Component {
 
   componentDidMount = async () => {
     const newData = await fetchCharacters();
-    this.setState({ characterData: newData });
+    this.setState({ characterData: newData, loading: false });
   };
 
   render() {
+    if (this.state.loading) return <h3>Loading...</h3>;
+
     return (
       <>
         <CharactersList data={this.state.characterData} />
