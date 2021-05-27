@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//proptypes
 
 export default function CharacterDetail({ characters }) {
   return (

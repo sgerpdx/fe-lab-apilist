@@ -3,7 +3,7 @@ import { render, screen, waitFor } from '@testing-library/react';
 import AvatarContainer from './AvatarContainer';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import { MemoryRouter, Route } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 
 const characterGroupRes = [
   {
@@ -209,7 +209,7 @@ describe('list container component for Avatar characters', () => {
     expect(pageLoading).toMatchSnapshot();
 
     return waitFor(() => {
-      screen.getByText('Analay');
+      screen.getByText(/Analay/);
       screen.getByAltText('5cf5679a915ecad153ab68d1');
     });
   });
