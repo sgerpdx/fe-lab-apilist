@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`list container component for Avatar characters displays the correct stuff 1`] = `
+exports[`list container component for Avatar characters displays a list of characters 1`] = `
 <h3>
   Loading...
 </h3>

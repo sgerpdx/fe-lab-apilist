@@ -4,25 +4,16 @@ exports[`App component renders App 1`] = `
 <DocumentFragment>
   <div>
     <h1>
-      Hello World
+      *** Avatar: The Last Airbender ***
     </h1>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="/characters"
-          >
-            All Characters
-          </a>
-        </li>
-        <li>
-          <a
-            href="/detail"
-          >
-            Character Detail
-          </a>
-        </li>
-      </ul>
+    <nav
+      class="homeLink"
+    >
+      <a
+        href="/characters"
+      >
+        Return to All Characters
+      </a>
     </nav>
   </div>
 </DocumentFragment>

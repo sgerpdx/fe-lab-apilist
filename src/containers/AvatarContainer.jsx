@@ -4,7 +4,6 @@ import CharactersList from '../components/app/characters/CharactersList';
 
 export default class AvatarContainer extends Component {
   state = {
-    thingOne: '',
     loading: true,
     characterData: [],
   };
@@ -15,6 +14,8 @@ export default class AvatarContainer extends Component {
   };
 
   render() {
+    console.log('LLL', this.state.loading);
+    console.log('CCC', this.state.characterData);
     if (this.state.loading) return <h3>Loading...</h3>;
 
     return (
