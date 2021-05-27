@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: brown;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeLink {
+  background-color: burlywood;
+}
