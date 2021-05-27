@@ -8,7 +8,7 @@ export default function CharacterDetail({ characters }) {
       <ul aria-label="List of Characters">
         {characters.map((character) => (
           <li key={character.id}>
-            <Link to={`/characters/${character.name}`}>
+            <Link to={`/characters/${character.id}`}>
               <img src={character.image} height="80" />
             </Link>
             <p>{character.name}</p>

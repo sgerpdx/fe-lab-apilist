@@ -1,25 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import CharactersList from './characters/CharactersList';
-import CharacterDetail from './characters/CharacterDetail';
 import AvatarContainer from '../../containers/AvatarContainer';
+import SingleContainer from '../../containers/SingleContainer';
 // App just deals with presentation
 
 export default function App() {
   return (
     <Router>
       <div>
-        <h1>Hello World</h1>
-        {/* <div>
-          <AvatarContainer />
-        </div> */}
+        <h1>*** Avatar: The Last Airbender ***</h1>
         <nav>
           <ul>
             <li>
-              <Link to="/characters">All Characters</Link>
-            </li>
-            <li>
-              <Link to="/detail">Character Detail</Link>
+              <Link to="/characters">Return to All Characters</Link>
             </li>
           </ul>
         </nav>
@@ -27,8 +20,8 @@ export default function App() {
           <Route path="/characters">
             <AvatarContainer />
           </Route>
-          <Route path="/detail">
-            <CharacterDetail />
+          <Route path="/characters/:id">
+            <SingleContainer />
           </Route>
         </Switch>
       </div>
