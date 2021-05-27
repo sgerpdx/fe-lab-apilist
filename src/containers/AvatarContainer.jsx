@@ -19,7 +19,6 @@ export default class AvatarContainer extends Component {
 
     return (
       <>
-        <h2>Container</h2>
         <CharactersList characters={this.state.characterData} />
       </>
     );

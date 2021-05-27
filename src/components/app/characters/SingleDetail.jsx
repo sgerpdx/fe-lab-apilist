@@ -8,15 +8,9 @@ export default function CharacterDetail({ character }) {
         <li>
           <img src={character.image} height="100" />
         </li>
-        <li>
-          Name: <h2>{character.name}</h2>
-        </li>
-        <li>
-          Faction: <p>{character.faction}</p>
-        </li>
-        <li>
-          Role: <p>{character.role}</p>
-        </li>
+        <li>Name: {character.name}</li>
+        <li>Faction: {character.faction}</li>
+        <li>Role: {character.role}</li>
       </ul>
     </section>
   );

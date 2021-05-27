@@ -3,7 +3,6 @@ export const fetchCharacters = async () => {
     'https://last-airbender-api.herokuapp.com/api/v1/characters'
   );
   const data = await res.json();
-  console.log('/////MULT', data);
 
   return data.map((character) => ({
     id: character._id,
@@ -13,12 +12,11 @@ export const fetchCharacters = async () => {
   }));
 };
 
-export const fetchSingleCharacter = async () => {
+export const fetchSingleCharacter = async (id) => {
   const res = await fetch(
     `https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`
   );
   const character = await res.json();
-  console.log('/////SINGLE', character);
 
   return {
     id: character._id,

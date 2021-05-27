@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { fetchSingleCharacter } from '../services/AvatarAPI';
-import CharacterDetail from '../components/app/characters/CharacterDetail';
+import SingleDetail from '../components/app/characters/SingleDetail';
 
 export default class SingleContainer extends Component {
   state = {
-    thingOne: '',
     loading: true,
     characterData: {},
   };
 
   componentDidMount = async () => {
-    const newData = await fetchSingleCharacter();
+    const newData = await fetchSingleCharacter(this.props.match.params.id);
     this.setState({ characterData: newData, loading: false });
   };
 
@@ -19,8 +18,7 @@ export default class SingleContainer extends Component {
 
     return (
       <>
-        <h2>Container</h2>
-        <CharactersList character={this.state.characterData} />
+        <SingleDetail character={this.state.characterData} />
       </>
     );
   }
